@@ -1,0 +1,73 @@
+body{
+    position: absolute;
+    left: 30%;
+    width: 35%;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+}
+.description{
+    width: 100%;
+    border: 0px;
+    border-bottom: 2px solid black;
+    height: 40px;
+}
+.dropdown{
+    margin-top: 10px;
+    width: 100%;
+    border: 0px;
+    height: 40px;
+}
+.duedate{
+    border: 0px;
+    height: 40px;
+    width: 100%;
+}
+label{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+span{
+    display: inline-block;
+    padding: 5px;
+
+}
+button{
+    height: 40px;
+    width: 120px;
+    background-color: gray;
+    margin: 0px;;
+
+}
+.button-cont{
+    margin-left: 200px;
+}
+.outputcat{
+    margin-left: 350px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+.personal{
+      background-color: blue;
+}
+.school{
+    background-color: blueviolet;
+}
+.work{
+    background-color: chartreuse;
+
+}
+.cleaning{
+    background-color: cyan;
+
+}
+.other{
+    background-color: yellow;
+}

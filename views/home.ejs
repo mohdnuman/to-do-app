@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>To Do App</title>
+        <link rel="stylesheet" href="./css/home.css">
+        <script src="https://kit.fontawesome.com/8ca18696eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>TODO App</h1>
+        <form action="/add-task" method="POST">
+            <div>
+                <label for="#desc">DESCRIPTION</label>
+                <input type="text" name="description" class="description" placeholder="What Do You Need To Do?" id="desc">
+            </div>
+            <div>
+                <span style="width: 50%;">
+                    <label for="#drop">CATEGORY</label>
+                    <select name="category" class="dropdown" id="drop">
+                        <option value="" disabled selected>Choose Your Category</option>
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="school">School</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </span>
+                <span style="width: 40%;">
+                    <label for="#due">DUE DATE</label>
+                    <input type="date" name="duedate" class="duedate" id="due">
+                </span>
+                <div class="button-cont">
+                    <button type="submit" id="add"><i class="fas fa-plus"></i>  ADD TASK</button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <form action="/delete-task" method="GET">
+                <% for(let i of tasks){ %>
+                    <input type="checkbox" name="id" value="<%=i.id%>">
+                    <span style="border-top: 2px solid black ">
+                        <%= i.description %>
+                        <span class="<%=i.category%> outputcat"><%=i.category %></span>
+                        <br>
+                        <span>
+                            <i class="far fa-calendar-alt"></i>
+                            <%= i.duedate%>
+                        </span>
+                    </span>
+                    <br>
+                <% } %> 
+                <button type="submit" style="margin-left: 200px;"><i class="fas fa-trash-alt"></i>  DELETE TASK</button>  
+            </form>
+
+        </div>
+        
+    </body>
+</html>
