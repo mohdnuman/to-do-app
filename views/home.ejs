@@ -36,17 +36,16 @@
             <form action="/delete-task" method="GET">
                 <% for(let i of tasks){ %>
                     <div style="border-top: 2px solid black ">
-                    <input type="checkbox" name="id" value="<%=i.id%>">
-                    
-                    <span style="width: 550px;">
-                        <%= i.description %>
-                        <br>
-                        <span>
-                            <i class="far fa-calendar-alt"></i>
-                            <%= i.duedate%>
-                        </span>
-                    </span>
-                    <span class="<%=i.category%> outputcat"><%=i.category %></span>
+                    <input type="checkbox" name="id" value="<%=i.id%>" id="check" class="strikethrough">
+                        <label for="check" style="display:inline; font-size: 1.5rem;">
+                        <%= i.description %> 
+                        <br><br>
+                        &ensp;&ensp;
+                        <i class="far fa-calendar-alt"></i>
+                        <%= i.duedate%>
+                        <span class="<%=i.category%> outputcat" style="margin-left: 450px;"><%=i.category %></span>
+                        </label>
+                        
                     </div>
                     <br>
                 <% } %> 
@@ -54,6 +53,5 @@
             </form>
 
         </div>
-        
     </body>
 </html>

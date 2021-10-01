@@ -70,3 +70,9 @@ button{
 .other{
     background-color: yellow;
 }
+.strikethrough:checked + label{
+    text-decoration:line-through
+}
+.strikethrough:checked +span{
+    text-decoration:line-through
+}
