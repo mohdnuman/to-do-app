@@ -1,7 +1,7 @@
 body{
     position: absolute;
-    left: 30%;
-    width: 35%;
+    left: 20%;
+    width: 50%;
     font-family: sans-serif;
     border: 2px solid black;
 }
@@ -45,10 +45,9 @@ button{
 
 }
 .button-cont{
-    margin-left: 200px;
+    margin-left: 300px;
 }
 .outputcat{
-    margin-left: 350px;
     height: 30px;
     width: 80px;
     text-align: center;
