@@ -19,11 +19,13 @@ h1{
     width: 100%;
     border: 0px;
     height: 40px;
+    border-bottom: 2px solid black;
 }
 .duedate{
     border: 0px;
     height: 40px;
     width: 100%;
+    border-bottom: 2px solid black;
 }
 label{
     display: block;
@@ -46,6 +48,7 @@ button{
 }
 .button-cont{
     margin-left: 300px;
+    margin-top: 10px;
 }
 .outputcat{
     height: 30px;
@@ -71,8 +74,5 @@ button{
     background-color: yellow;
 }
 .strikethrough:checked + label{
-    text-decoration:line-through
-}
-.strikethrough:checked +span{
     text-decoration:line-through
 }
